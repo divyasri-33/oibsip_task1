@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSCMR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="\Users\HP\Downloads\11.jpeg" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>POTTI SRIRAMULA COLLEGE OF ENGINEERING AND TECHNOLOGY</h2>
+          <p>
+            PSCMR College of Engineering & Technology is SKPVV Hindu High Schools Committee's latest contribution 
+            to the cause of education, this time in a new .
+            Recently it got naac A++ which is a first college in andhra pradesh.
+            for now onwads it become a autonomous college.
+          </p>
+          <a href="#">View All college details</a>
+        </div>
+        <div class="imgBox">
+         
+          <img src="\Users\HP\Downloads\1.jpeg" class="PSCMR" />
+    
+        </div>
+      </div>
+      <ul class="pscmr">
+        <li>
+          <img
+            src="\Users\HP\Downloads\2.jpeg"
+            onclick="imgSlider('\Users\HP\Downloads\2.jpeg');changeBgcolor('#0062be')"
+          />
+        </li>
+        <li>
+          <img
+            src="\Users\HP\Downloads\3.jpeg"
+            onclick="imgSlider('\Users\HP\Downloads\3.jpeg');changeBgcolor('#e60c2c')"
+          />
+        </li>
+        <li>
+          <img
+            src="\Users\HP\Downloads\4.jpeg"
+            onclick="imgSlider('\Users\HP\Downloads\4.jpeg');changeBgcolor('#1e1e1e')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="\Users\HP\Downloads\5.jpeg" /></a>
+        </li>
+        
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+      function changeBgcolor(color) {
+        const sec = document.querySelector(".sec");
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
